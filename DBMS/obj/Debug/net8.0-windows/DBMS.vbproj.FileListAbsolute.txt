@@ -1,0 +1,17 @@
+C:\Users\sebas\source\repos\DBMS\DBMS\obj\Debug\net8.0-windows\DBMS.Resources.resources
+C:\Users\sebas\source\repos\DBMS\DBMS\obj\Debug\net8.0-windows\DBMS.vbproj.GenerateResource.cache
+C:\Users\sebas\source\repos\DBMS\DBMS\obj\Debug\net8.0-windows\DBMS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sebas\source\repos\DBMS\DBMS\obj\Debug\net8.0-windows\DBMS.AssemblyInfoInputs.cache
+C:\Users\sebas\source\repos\DBMS\DBMS\obj\Debug\net8.0-windows\DBMS.AssemblyInfo.vb
+C:\Users\sebas\source\repos\DBMS\DBMS\obj\Debug\net8.0-windows\DBMS.vbproj.CoreCompileInputs.cache
+C:\Users\sebas\source\repos\DBMS\DBMS\bin\Debug\net8.0-windows\DBMS.exe
+C:\Users\sebas\source\repos\DBMS\DBMS\bin\Debug\net8.0-windows\DBMS.deps.json
+C:\Users\sebas\source\repos\DBMS\DBMS\bin\Debug\net8.0-windows\DBMS.runtimeconfig.json
+C:\Users\sebas\source\repos\DBMS\DBMS\bin\Debug\net8.0-windows\DBMS.dll
+C:\Users\sebas\source\repos\DBMS\DBMS\bin\Debug\net8.0-windows\DBMS.pdb
+C:\Users\sebas\source\repos\DBMS\DBMS\obj\Debug\net8.0-windows\DBMS.Form1.resources
+C:\Users\sebas\source\repos\DBMS\DBMS\obj\Debug\net8.0-windows\DBMS.dll
+C:\Users\sebas\source\repos\DBMS\DBMS\obj\Debug\net8.0-windows\refint\DBMS.dll
+C:\Users\sebas\source\repos\DBMS\DBMS\obj\Debug\net8.0-windows\DBMS.pdb
+C:\Users\sebas\source\repos\DBMS\DBMS\obj\Debug\net8.0-windows\DBMS.genruntimeconfig.cache
+C:\Users\sebas\source\repos\DBMS\DBMS\obj\Debug\net8.0-windows\ref\DBMS.dll
