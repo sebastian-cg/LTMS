@@ -7,6 +7,9 @@
     <Compile Update="SignUpForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="StatusView.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UserDashboard.vb">
       <SubType>Form</SubType>
     </Compile>
