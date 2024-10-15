@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("DBMS"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e77a98e219dfd603ae3b533bd1aca46b272207f"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d22c80d4860979b13b352c57a14d4fc534d54ae1"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("DBMS"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("DBMS"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

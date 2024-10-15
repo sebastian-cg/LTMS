@@ -41,7 +41,7 @@ Partial Class Form1
         ' 
         ' leftSidePanel
         ' 
-        leftSidePanel.BackColor = SystemColors.AppWorkspace
+        leftSidePanel.BackColor = Color.FromArgb(CByte(182), CByte(187), CByte(196))
         leftSidePanel.Controls.Add(aboutUsBtn)
         leftSidePanel.Controls.Add(signUpBtn)
         leftSidePanel.Controls.Add(orTextBoxLogin)
