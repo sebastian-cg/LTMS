@@ -27,7 +27,7 @@ Partial Class Form1
         signUpBtn = New LinkLabel()
         orTextBoxLogin = New Label()
         loginBtn = New Button()
-        TextBox1 = New TextBox()
+        passTxtBoxLogin = New TextBox()
         loginTxtBoxUser = New TextBox()
         loginAccPicbox = New PictureBox()
         loginRightSidePanel = New Panel()
@@ -46,7 +46,7 @@ Partial Class Form1
         leftSidePanel.Controls.Add(signUpBtn)
         leftSidePanel.Controls.Add(orTextBoxLogin)
         leftSidePanel.Controls.Add(loginBtn)
-        leftSidePanel.Controls.Add(TextBox1)
+        leftSidePanel.Controls.Add(passTxtBoxLogin)
         leftSidePanel.Controls.Add(loginTxtBoxUser)
         leftSidePanel.Controls.Add(loginAccPicbox)
         leftSidePanel.Location = New Point(28, 38)
@@ -100,15 +100,15 @@ Partial Class Form1
         loginBtn.Text = "Login"
         loginBtn.UseVisualStyleBackColor = False
         ' 
-        ' TextBox1
+        ' passTxtBoxLogin
         ' 
-        TextBox1.Font = New Font("HarmonyOS Sans SC", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox1.Location = New Point(45, 318)
-        TextBox1.Name = "TextBox1"
-        TextBox1.PasswordChar = "*"c
-        TextBox1.PlaceholderText = "   Enter your password"
-        TextBox1.Size = New Size(340, 31)
-        TextBox1.TabIndex = 2
+        passTxtBoxLogin.Font = New Font("HarmonyOS Sans SC", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        passTxtBoxLogin.Location = New Point(45, 318)
+        passTxtBoxLogin.Name = "passTxtBoxLogin"
+        passTxtBoxLogin.PasswordChar = "*"c
+        passTxtBoxLogin.PlaceholderText = "   Enter your password"
+        passTxtBoxLogin.Size = New Size(340, 31)
+        passTxtBoxLogin.TabIndex = 2
         ' 
         ' loginTxtBoxUser
         ' 
@@ -180,7 +180,7 @@ Partial Class Form1
     Friend WithEvents loginAccPicbox As PictureBox
     Friend WithEvents loginRightSidePanel As Panel
     Friend WithEvents loginTxtBoxUser As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents passTxtBoxLogin As TextBox
     Friend WithEvents systemNameLogin As Label
     Friend WithEvents logoLogin As PictureBox
     Friend WithEvents loginBtn As Button
