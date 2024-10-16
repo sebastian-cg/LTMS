@@ -18,3 +18,5 @@ C:\Users\sebas\source\repos\DBMS\DBMS\obj\Debug\net8.0-windows\ref\DBMS.dll
 C:\Users\sebas\source\repos\DBMS\DBMS\obj\Debug\net8.0-windows\DBMS.SignUpForm.resources
 C:\Users\sebas\source\repos\DBMS\DBMS\obj\Debug\net8.0-windows\DBMS.sourcelink.json
 C:\Users\sebas\source\repos\DBMS\DBMS\obj\Debug\net8.0-windows\DBMS.UserDashboard.resources
+C:\Users\sebas\source\repos\DBMS\DBMS\obj\Debug\net8.0-windows\DBMS.ReApply.resources
+C:\Users\sebas\source\repos\DBMS\DBMS\obj\Debug\net8.0-windows\DBMS.StatusView.resources

@@ -125,7 +125,7 @@ Partial Class SignUpForm
         ' 
         ' signLeftSidePanel
         ' 
-        signLeftSidePanel.BackColor = SystemColors.AppWorkspace
+        signLeftSidePanel.BackColor = Color.FromArgb(CByte(182), CByte(187), CByte(196))
         signLeftSidePanel.Controls.Add(backBtnSign)
         signLeftSidePanel.Controls.Add(reEnterPassSignUp)
         signLeftSidePanel.Controls.Add(aboutUsBtn)

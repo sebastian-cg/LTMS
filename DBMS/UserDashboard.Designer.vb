@@ -33,6 +33,15 @@ Partial Class UserDashboard
         contentPanelUser = New Panel()
         logoPicBoxUser = New PictureBox()
         mainDashboardPanel = New Panel()
+        submitBtnUserDashB = New Button()
+        licenseExpiryPickerUserDashB = New DateTimePicker()
+        licenseExpiryLblUserDashB = New Label()
+        dLicenseNoTxtBxUserDashB = New TextBox()
+        dLicenseNoLblUserDashB = New Label()
+        nationalityTxtBxUserDashB = New TextBox()
+        nationalityLblUserDashB = New Label()
+        emailTxtBxUserDashB = New TextBox()
+        emailLblUserDashB = New Label()
         phoneTxtBxUserDashB = New TextBox()
         phoneLblUserDashB = New Label()
         addressTxtBxUserDashB = New TextBox()
@@ -45,15 +54,6 @@ Partial Class UserDashboard
         fullNameLblUserDashB = New Label()
         TextBox1 = New TextBox()
         Panel1 = New Panel()
-        emailTxtBxUserDashB = New TextBox()
-        emailLblUserDashB = New Label()
-        nationalityLblUserDashB = New Label()
-        nationalityTxtBxUserDashB = New TextBox()
-        dLicenseNoTxtBxUserDashB = New TextBox()
-        dLicenseNoLblUserDashB = New Label()
-        licenseExpiryPickerUserDashB = New DateTimePicker()
-        licenseExpiryLblUserDashB = New Label()
-        submitBtnUserDashB = New Button()
         actionPanelUser.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         contentPanelUser.SuspendLayout()
@@ -82,7 +82,7 @@ Partial Class UserDashboard
         logoutBtnUser.BackColor = Color.FromArgb(CByte(49), CByte(48), CByte(77))
         logoutBtnUser.FlatStyle = FlatStyle.Popup
         logoutBtnUser.ForeColor = SystemColors.ButtonHighlight
-        logoutBtnUser.Location = New Point(21, 721)
+        logoutBtnUser.Location = New Point(26, 721)
         logoutBtnUser.Name = "logoutBtnUser"
         logoutBtnUser.Size = New Size(203, 41)
         logoutBtnUser.TabIndex = 6
@@ -94,7 +94,7 @@ Partial Class UserDashboard
         statusBtnUser.BackColor = Color.FromArgb(CByte(49), CByte(48), CByte(77))
         statusBtnUser.FlatStyle = FlatStyle.Popup
         statusBtnUser.ForeColor = SystemColors.ButtonHighlight
-        statusBtnUser.Location = New Point(41, 435)
+        statusBtnUser.Location = New Point(46, 435)
         statusBtnUser.Name = "statusBtnUser"
         statusBtnUser.Size = New Size(158, 41)
         statusBtnUser.TabIndex = 5
@@ -106,7 +106,7 @@ Partial Class UserDashboard
         emailsBtnUser.BackColor = Color.FromArgb(CByte(49), CByte(48), CByte(77))
         emailsBtnUser.FlatStyle = FlatStyle.Popup
         emailsBtnUser.ForeColor = SystemColors.ButtonHighlight
-        emailsBtnUser.Location = New Point(41, 375)
+        emailsBtnUser.Location = New Point(46, 375)
         emailsBtnUser.Name = "emailsBtnUser"
         emailsBtnUser.Size = New Size(158, 41)
         emailsBtnUser.TabIndex = 4
@@ -118,7 +118,7 @@ Partial Class UserDashboard
         downloadBtnUser.BackColor = Color.FromArgb(CByte(49), CByte(48), CByte(77))
         downloadBtnUser.FlatStyle = FlatStyle.Popup
         downloadBtnUser.ForeColor = SystemColors.ButtonHighlight
-        downloadBtnUser.Location = New Point(41, 316)
+        downloadBtnUser.Location = New Point(46, 316)
         downloadBtnUser.Name = "downloadBtnUser"
         downloadBtnUser.Size = New Size(158, 41)
         downloadBtnUser.TabIndex = 3
@@ -130,7 +130,7 @@ Partial Class UserDashboard
         dashboardBtnUser.BackColor = Color.FromArgb(CByte(49), CByte(48), CByte(77))
         dashboardBtnUser.FlatStyle = FlatStyle.Popup
         dashboardBtnUser.ForeColor = SystemColors.ButtonHighlight
-        dashboardBtnUser.Location = New Point(41, 256)
+        dashboardBtnUser.Location = New Point(46, 256)
         dashboardBtnUser.Name = "dashboardBtnUser"
         dashboardBtnUser.Size = New Size(158, 41)
         dashboardBtnUser.TabIndex = 2
@@ -150,7 +150,7 @@ Partial Class UserDashboard
         ' PictureBox1
         ' 
         PictureBox1.Image = My.Resources.Resources.account_2040484
-        PictureBox1.Location = New Point(59, 62)
+        PictureBox1.Location = New Point(64, 62)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(110, 101)
         PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
@@ -204,6 +204,90 @@ Partial Class UserDashboard
         mainDashboardPanel.Name = "mainDashboardPanel"
         mainDashboardPanel.Size = New Size(961, 596)
         mainDashboardPanel.TabIndex = 0
+        ' 
+        ' submitBtnUserDashB
+        ' 
+        submitBtnUserDashB.BackColor = Color.FromArgb(CByte(49), CByte(48), CByte(77))
+        submitBtnUserDashB.FlatStyle = FlatStyle.Popup
+        submitBtnUserDashB.ForeColor = SystemColors.ButtonHighlight
+        submitBtnUserDashB.Location = New Point(812, 472)
+        submitBtnUserDashB.Name = "submitBtnUserDashB"
+        submitBtnUserDashB.Size = New Size(116, 37)
+        submitBtnUserDashB.TabIndex = 19
+        submitBtnUserDashB.Text = "Submit"
+        submitBtnUserDashB.UseVisualStyleBackColor = False
+        ' 
+        ' licenseExpiryPickerUserDashB
+        ' 
+        licenseExpiryPickerUserDashB.Format = DateTimePickerFormat.Custom
+        licenseExpiryPickerUserDashB.Location = New Point(696, 304)
+        licenseExpiryPickerUserDashB.Name = "licenseExpiryPickerUserDashB"
+        licenseExpiryPickerUserDashB.Size = New Size(131, 27)
+        licenseExpiryPickerUserDashB.TabIndex = 18
+        ' 
+        ' licenseExpiryLblUserDashB
+        ' 
+        licenseExpiryLblUserDashB.AutoSize = True
+        licenseExpiryLblUserDashB.Font = New Font("HarmonyOS Sans SC Medium", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        licenseExpiryLblUserDashB.Location = New Point(499, 304)
+        licenseExpiryLblUserDashB.Name = "licenseExpiryLblUserDashB"
+        licenseExpiryLblUserDashB.Size = New Size(188, 23)
+        licenseExpiryLblUserDashB.TabIndex = 17
+        licenseExpiryLblUserDashB.Text = "License Expiry Date:"
+        ' 
+        ' dLicenseNoTxtBxUserDashB
+        ' 
+        dLicenseNoTxtBxUserDashB.Location = New Point(696, 260)
+        dLicenseNoTxtBxUserDashB.Name = "dLicenseNoTxtBxUserDashB"
+        dLicenseNoTxtBxUserDashB.PlaceholderText = "   xxxx-xxx-xxxx"
+        dLicenseNoTxtBxUserDashB.Size = New Size(232, 27)
+        dLicenseNoTxtBxUserDashB.TabIndex = 16
+        ' 
+        ' dLicenseNoLblUserDashB
+        ' 
+        dLicenseNoLblUserDashB.AutoSize = True
+        dLicenseNoLblUserDashB.Font = New Font("HarmonyOS Sans SC Medium", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        dLicenseNoLblUserDashB.Location = New Point(499, 259)
+        dLicenseNoLblUserDashB.Name = "dLicenseNoLblUserDashB"
+        dLicenseNoLblUserDashB.Size = New Size(191, 23)
+        dLicenseNoLblUserDashB.TabIndex = 15
+        dLicenseNoLblUserDashB.Text = "Driving License No. :"
+        ' 
+        ' nationalityTxtBxUserDashB
+        ' 
+        nationalityTxtBxUserDashB.Location = New Point(651, 209)
+        nationalityTxtBxUserDashB.Name = "nationalityTxtBxUserDashB"
+        nationalityTxtBxUserDashB.PlaceholderText = "   Enter your name"
+        nationalityTxtBxUserDashB.Size = New Size(277, 27)
+        nationalityTxtBxUserDashB.TabIndex = 14
+        ' 
+        ' nationalityLblUserDashB
+        ' 
+        nationalityLblUserDashB.AutoSize = True
+        nationalityLblUserDashB.Font = New Font("HarmonyOS Sans SC Medium", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        nationalityLblUserDashB.Location = New Point(499, 208)
+        nationalityLblUserDashB.Name = "nationalityLblUserDashB"
+        nationalityLblUserDashB.Size = New Size(113, 23)
+        nationalityLblUserDashB.TabIndex = 13
+        nationalityLblUserDashB.Text = "Nationality:"
+        ' 
+        ' emailTxtBxUserDashB
+        ' 
+        emailTxtBxUserDashB.Location = New Point(651, 156)
+        emailTxtBxUserDashB.Name = "emailTxtBxUserDashB"
+        emailTxtBxUserDashB.PlaceholderText = "   Enter your name"
+        emailTxtBxUserDashB.Size = New Size(277, 27)
+        emailTxtBxUserDashB.TabIndex = 12
+        ' 
+        ' emailLblUserDashB
+        ' 
+        emailLblUserDashB.AutoSize = True
+        emailLblUserDashB.Font = New Font("HarmonyOS Sans SC Medium", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        emailLblUserDashB.Location = New Point(499, 155)
+        emailLblUserDashB.Name = "emailLblUserDashB"
+        emailLblUserDashB.Size = New Size(63, 23)
+        emailLblUserDashB.TabIndex = 11
+        emailLblUserDashB.Text = "Email:"
         ' 
         ' phoneTxtBxUserDashB
         ' 
@@ -310,90 +394,6 @@ Partial Class UserDashboard
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(1014, 45)
         Panel1.TabIndex = 2
-        ' 
-        ' emailTxtBxUserDashB
-        ' 
-        emailTxtBxUserDashB.Location = New Point(651, 156)
-        emailTxtBxUserDashB.Name = "emailTxtBxUserDashB"
-        emailTxtBxUserDashB.PlaceholderText = "   Enter your name"
-        emailTxtBxUserDashB.Size = New Size(277, 27)
-        emailTxtBxUserDashB.TabIndex = 12
-        ' 
-        ' emailLblUserDashB
-        ' 
-        emailLblUserDashB.AutoSize = True
-        emailLblUserDashB.Font = New Font("HarmonyOS Sans SC Medium", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        emailLblUserDashB.Location = New Point(499, 155)
-        emailLblUserDashB.Name = "emailLblUserDashB"
-        emailLblUserDashB.Size = New Size(63, 23)
-        emailLblUserDashB.TabIndex = 11
-        emailLblUserDashB.Text = "Email:"
-        ' 
-        ' nationalityLblUserDashB
-        ' 
-        nationalityLblUserDashB.AutoSize = True
-        nationalityLblUserDashB.Font = New Font("HarmonyOS Sans SC Medium", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        nationalityLblUserDashB.Location = New Point(499, 208)
-        nationalityLblUserDashB.Name = "nationalityLblUserDashB"
-        nationalityLblUserDashB.Size = New Size(113, 23)
-        nationalityLblUserDashB.TabIndex = 13
-        nationalityLblUserDashB.Text = "Nationality:"
-        ' 
-        ' nationalityTxtBxUserDashB
-        ' 
-        nationalityTxtBxUserDashB.Location = New Point(651, 209)
-        nationalityTxtBxUserDashB.Name = "nationalityTxtBxUserDashB"
-        nationalityTxtBxUserDashB.PlaceholderText = "   Enter your name"
-        nationalityTxtBxUserDashB.Size = New Size(277, 27)
-        nationalityTxtBxUserDashB.TabIndex = 14
-        ' 
-        ' dLicenseNoTxtBxUserDashB
-        ' 
-        dLicenseNoTxtBxUserDashB.Location = New Point(696, 260)
-        dLicenseNoTxtBxUserDashB.Name = "dLicenseNoTxtBxUserDashB"
-        dLicenseNoTxtBxUserDashB.PlaceholderText = "   xxxx-xxx-xxxx"
-        dLicenseNoTxtBxUserDashB.Size = New Size(232, 27)
-        dLicenseNoTxtBxUserDashB.TabIndex = 16
-        ' 
-        ' dLicenseNoLblUserDashB
-        ' 
-        dLicenseNoLblUserDashB.AutoSize = True
-        dLicenseNoLblUserDashB.Font = New Font("HarmonyOS Sans SC Medium", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        dLicenseNoLblUserDashB.Location = New Point(499, 259)
-        dLicenseNoLblUserDashB.Name = "dLicenseNoLblUserDashB"
-        dLicenseNoLblUserDashB.Size = New Size(191, 23)
-        dLicenseNoLblUserDashB.TabIndex = 15
-        dLicenseNoLblUserDashB.Text = "Driving License No. :"
-        ' 
-        ' licenseExpiryPickerUserDashB
-        ' 
-        licenseExpiryPickerUserDashB.Format = DateTimePickerFormat.Custom
-        licenseExpiryPickerUserDashB.Location = New Point(696, 304)
-        licenseExpiryPickerUserDashB.Name = "licenseExpiryPickerUserDashB"
-        licenseExpiryPickerUserDashB.Size = New Size(131, 27)
-        licenseExpiryPickerUserDashB.TabIndex = 18
-        ' 
-        ' licenseExpiryLblUserDashB
-        ' 
-        licenseExpiryLblUserDashB.AutoSize = True
-        licenseExpiryLblUserDashB.Font = New Font("HarmonyOS Sans SC Medium", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        licenseExpiryLblUserDashB.Location = New Point(499, 304)
-        licenseExpiryLblUserDashB.Name = "licenseExpiryLblUserDashB"
-        licenseExpiryLblUserDashB.Size = New Size(188, 23)
-        licenseExpiryLblUserDashB.TabIndex = 17
-        licenseExpiryLblUserDashB.Text = "License Expiry Date:"
-        ' 
-        ' submitBtnUserDashB
-        ' 
-        submitBtnUserDashB.BackColor = Color.FromArgb(CByte(49), CByte(48), CByte(77))
-        submitBtnUserDashB.FlatStyle = FlatStyle.Popup
-        submitBtnUserDashB.ForeColor = SystemColors.ButtonHighlight
-        submitBtnUserDashB.Location = New Point(812, 472)
-        submitBtnUserDashB.Name = "submitBtnUserDashB"
-        submitBtnUserDashB.Size = New Size(116, 37)
-        submitBtnUserDashB.TabIndex = 19
-        submitBtnUserDashB.Text = "Submit"
-        submitBtnUserDashB.UseVisualStyleBackColor = False
         ' 
         ' UserDashboard
         ' 
