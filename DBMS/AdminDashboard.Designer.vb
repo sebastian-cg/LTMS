@@ -448,7 +448,7 @@ Partial Class AdminDashboard
         searchBtnAdminDB.FlatStyle = FlatStyle.Popup
         searchBtnAdminDB.Font = New Font("HarmonyOS Sans SC", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         searchBtnAdminDB.ForeColor = Color.White
-        searchBtnAdminDB.Location = New Point(768, 25)
+        searchBtnAdminDB.Location = New Point(790, 25)
         searchBtnAdminDB.Name = "searchBtnAdminDB"
         searchBtnAdminDB.Size = New Size(94, 27)
         searchBtnAdminDB.TabIndex = 3
@@ -461,7 +461,7 @@ Partial Class AdminDashboard
         searchAdminDB.Location = New Point(463, 25)
         searchAdminDB.Name = "searchAdminDB"
         searchAdminDB.PlaceholderText = "Search user...."
-        searchAdminDB.Size = New Size(299, 27)
+        searchAdminDB.Size = New Size(321, 27)
         searchAdminDB.TabIndex = 2
         ' 
         ' adminDGV
@@ -475,9 +475,10 @@ Partial Class AdminDashboard
         ' 
         ' DTPadminDB
         ' 
+        DTPadminDB.Format = DateTimePickerFormat.Short
         DTPadminDB.Location = New Point(24, 25)
         DTPadminDB.Name = "DTPadminDB"
-        DTPadminDB.Size = New Size(250, 27)
+        DTPadminDB.Size = New Size(127, 27)
         DTPadminDB.TabIndex = 0
         ' 
         ' AdminDashboard
