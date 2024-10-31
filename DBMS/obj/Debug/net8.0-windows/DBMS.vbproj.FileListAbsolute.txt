@@ -23,3 +23,7 @@ C:\Users\sebas\source\repos\DBMS\DBMS\obj\Debug\net8.0-windows\DBMS.StatusView.r
 C:\Users\sebas\source\repos\DBMS\DBMS\obj\Debug\net8.0-windows\DBMS.AdminDashboard.resources
 C:\Users\sebas\source\repos\DBMS\DBMS\obj\Debug\net8.0-windows\DBMS.FillUpForm.resources
 C:\Users\sebas\source\repos\DBMS\DBMS\obj\Debug\net8.0-windows\DBMS.ReportNewUser.resources
+C:\Users\sebas\source\repos\DBMS\DBMS\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\sebas\source\repos\DBMS\DBMS\bin\Debug\net8.0-windows\MySql.Data.xml
+C:\Users\sebas\source\repos\DBMS\DBMS\obj\Debug\net8.0-windows\DBMS.vbproj.AssemblyReference.cache
+C:\Users\sebas\source\repos\DBMS\DBMS\obj\Debug\net8.0-windows\DBMS.vbproj.Up2Date

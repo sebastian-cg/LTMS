@@ -28,7 +28,7 @@ Partial Class Form1
         orTextBoxLogin = New Label()
         loginBtn = New Button()
         passTxtBoxLogin = New TextBox()
-        loginTxtBoxUser = New TextBox()
+        loginTxtBoxLogin = New TextBox()
         loginAccPicbox = New PictureBox()
         loginRightSidePanel = New Panel()
         systemNameLogin = New Label()
@@ -47,7 +47,7 @@ Partial Class Form1
         leftSidePanel.Controls.Add(orTextBoxLogin)
         leftSidePanel.Controls.Add(loginBtn)
         leftSidePanel.Controls.Add(passTxtBoxLogin)
-        leftSidePanel.Controls.Add(loginTxtBoxUser)
+        leftSidePanel.Controls.Add(loginTxtBoxLogin)
         leftSidePanel.Controls.Add(loginAccPicbox)
         leftSidePanel.Location = New Point(28, 38)
         leftSidePanel.Name = "leftSidePanel"
@@ -110,14 +110,14 @@ Partial Class Form1
         passTxtBoxLogin.Size = New Size(340, 31)
         passTxtBoxLogin.TabIndex = 2
         ' 
-        ' loginTxtBoxUser
+        ' loginTxtBoxLogin
         ' 
-        loginTxtBoxUser.Font = New Font("HarmonyOS Sans SC", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        loginTxtBoxUser.Location = New Point(45, 263)
-        loginTxtBoxUser.Name = "loginTxtBoxUser"
-        loginTxtBoxUser.PlaceholderText = "   Enter your username"
-        loginTxtBoxUser.Size = New Size(340, 31)
-        loginTxtBoxUser.TabIndex = 1
+        loginTxtBoxLogin.Font = New Font("HarmonyOS Sans SC", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        loginTxtBoxLogin.Location = New Point(45, 263)
+        loginTxtBoxLogin.Name = "loginTxtBoxLogin"
+        loginTxtBoxLogin.PlaceholderText = "   Enter your username"
+        loginTxtBoxLogin.Size = New Size(340, 31)
+        loginTxtBoxLogin.TabIndex = 1
         ' 
         ' loginAccPicbox
         ' 
@@ -179,7 +179,7 @@ Partial Class Form1
     Friend WithEvents leftSidePanel As Panel
     Friend WithEvents loginAccPicbox As PictureBox
     Friend WithEvents loginRightSidePanel As Panel
-    Friend WithEvents loginTxtBoxUser As TextBox
+    Friend WithEvents loginTxtBoxLogin As TextBox
     Friend WithEvents passTxtBoxLogin As TextBox
     Friend WithEvents systemNameLogin As Label
     Friend WithEvents logoLogin As PictureBox

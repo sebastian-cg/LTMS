@@ -30,7 +30,9 @@ Partial Class FillUpForm
         PictureBox1 = New PictureBox()
         Panel2 = New Panel()
         Panel3 = New Panel()
-        logoPicBoxUser = New PictureBox()
+        Label2 = New Label()
+        mainDashboardStatusPanel = New Panel()
+        Button1 = New Button()
         licenseExpiryPickerUserStatus = New DateTimePicker()
         licenseExpiryLblUserStatus = New Label()
         dLicenseNoTxtBxUserStatus = New TextBox()
@@ -41,22 +43,20 @@ Partial Class FillUpForm
         emailLblUserStatus = New Label()
         phoneTxtBxUserStatus = New TextBox()
         phoneLblUserStatus = New Label()
+        addressTxtBxUserStatus = New TextBox()
         addressLblUserStatus = New Label()
         datePickerUserStatus = New DateTimePicker()
         dateLblUserStatus = New Label()
         sexComboBxUserStatus = New ComboBox()
         sexLabelUserStatus = New Label()
-        mainDashboardStatusPanel = New Panel()
-        addressTxtBxUserStatus = New TextBox()
         fullNameTxtBoxUserStatus = New TextBox()
         fullNameLblUserStatus = New Label()
-        Button1 = New Button()
-        Label2 = New Label()
+        logoPicBoxUser = New PictureBox()
         Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel3.SuspendLayout()
-        CType(logoPicBoxUser, ComponentModel.ISupportInitialize).BeginInit()
         mainDashboardStatusPanel.SuspendLayout()
+        CType(logoPicBoxUser, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Panel1
@@ -149,15 +149,55 @@ Partial Class FillUpForm
         Panel3.Size = New Size(1014, 746)
         Panel3.TabIndex = 4
         ' 
-        ' logoPicBoxUser
+        ' Label2
         ' 
-        logoPicBoxUser.Image = My.Resources.Resources.school_bus_12404453
-        logoPicBoxUser.Location = New Point(943, 3)
-        logoPicBoxUser.Name = "logoPicBoxUser"
-        logoPicBoxUser.Size = New Size(68, 61)
-        logoPicBoxUser.SizeMode = PictureBoxSizeMode.Zoom
-        logoPicBoxUser.TabIndex = 2
-        logoPicBoxUser.TabStop = False
+        Label2.AutoSize = True
+        Label2.Font = New Font("HarmonyOS Sans SC", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = Color.FromArgb(CByte(192), CByte(0), CByte(0))
+        Label2.Location = New Point(26, 71)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(893, 30)
+        Label2.TabIndex = 4
+        Label2.Text = "Hello, new user! Fill up this form first before you to redirect from our dashboard."
+        ' 
+        ' mainDashboardStatusPanel
+        ' 
+        mainDashboardStatusPanel.BackColor = Color.FromArgb(CByte(182), CByte(187), CByte(196))
+        mainDashboardStatusPanel.Controls.Add(Button1)
+        mainDashboardStatusPanel.Controls.Add(licenseExpiryPickerUserStatus)
+        mainDashboardStatusPanel.Controls.Add(licenseExpiryLblUserStatus)
+        mainDashboardStatusPanel.Controls.Add(dLicenseNoTxtBxUserStatus)
+        mainDashboardStatusPanel.Controls.Add(dLicenseNoLblUserStatus)
+        mainDashboardStatusPanel.Controls.Add(nationalityTxtBxUserStatus)
+        mainDashboardStatusPanel.Controls.Add(nationalityLblUserStatus)
+        mainDashboardStatusPanel.Controls.Add(emailTxtBxUserStatus)
+        mainDashboardStatusPanel.Controls.Add(emailLblUserStatus)
+        mainDashboardStatusPanel.Controls.Add(phoneTxtBxUserStatus)
+        mainDashboardStatusPanel.Controls.Add(phoneLblUserStatus)
+        mainDashboardStatusPanel.Controls.Add(addressTxtBxUserStatus)
+        mainDashboardStatusPanel.Controls.Add(addressLblUserStatus)
+        mainDashboardStatusPanel.Controls.Add(datePickerUserStatus)
+        mainDashboardStatusPanel.Controls.Add(dateLblUserStatus)
+        mainDashboardStatusPanel.Controls.Add(sexComboBxUserStatus)
+        mainDashboardStatusPanel.Controls.Add(sexLabelUserStatus)
+        mainDashboardStatusPanel.Controls.Add(fullNameTxtBoxUserStatus)
+        mainDashboardStatusPanel.Controls.Add(fullNameLblUserStatus)
+        mainDashboardStatusPanel.Location = New Point(26, 116)
+        mainDashboardStatusPanel.Name = "mainDashboardStatusPanel"
+        mainDashboardStatusPanel.Size = New Size(961, 596)
+        mainDashboardStatusPanel.TabIndex = 3
+        ' 
+        ' Button1
+        ' 
+        Button1.BackColor = Color.FromArgb(CByte(49), CByte(48), CByte(77))
+        Button1.FlatStyle = FlatStyle.Popup
+        Button1.ForeColor = SystemColors.ButtonHighlight
+        Button1.Location = New Point(770, 505)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(158, 41)
+        Button1.TabIndex = 19
+        Button1.Text = "Submit"
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' licenseExpiryPickerUserStatus
         ' 
@@ -248,6 +288,14 @@ Partial Class FillUpForm
         phoneLblUserStatus.TabIndex = 9
         phoneLblUserStatus.Text = "Phone Number:"
         ' 
+        ' addressTxtBxUserStatus
+        ' 
+        addressTxtBxUserStatus.Location = New Point(205, 304)
+        addressTxtBxUserStatus.Name = "addressTxtBxUserStatus"
+        addressTxtBxUserStatus.PlaceholderText = "   Enter your address"
+        addressTxtBxUserStatus.Size = New Size(262, 27)
+        addressTxtBxUserStatus.TabIndex = 8
+        ' 
         ' addressLblUserStatus
         ' 
         addressLblUserStatus.AutoSize = True
@@ -295,41 +343,6 @@ Partial Class FillUpForm
         sexLabelUserStatus.TabIndex = 3
         sexLabelUserStatus.Text = "Sex:"
         ' 
-        ' mainDashboardStatusPanel
-        ' 
-        mainDashboardStatusPanel.BackColor = Color.FromArgb(CByte(182), CByte(187), CByte(196))
-        mainDashboardStatusPanel.Controls.Add(Button1)
-        mainDashboardStatusPanel.Controls.Add(licenseExpiryPickerUserStatus)
-        mainDashboardStatusPanel.Controls.Add(licenseExpiryLblUserStatus)
-        mainDashboardStatusPanel.Controls.Add(dLicenseNoTxtBxUserStatus)
-        mainDashboardStatusPanel.Controls.Add(dLicenseNoLblUserStatus)
-        mainDashboardStatusPanel.Controls.Add(nationalityTxtBxUserStatus)
-        mainDashboardStatusPanel.Controls.Add(nationalityLblUserStatus)
-        mainDashboardStatusPanel.Controls.Add(emailTxtBxUserStatus)
-        mainDashboardStatusPanel.Controls.Add(emailLblUserStatus)
-        mainDashboardStatusPanel.Controls.Add(phoneTxtBxUserStatus)
-        mainDashboardStatusPanel.Controls.Add(phoneLblUserStatus)
-        mainDashboardStatusPanel.Controls.Add(addressTxtBxUserStatus)
-        mainDashboardStatusPanel.Controls.Add(addressLblUserStatus)
-        mainDashboardStatusPanel.Controls.Add(datePickerUserStatus)
-        mainDashboardStatusPanel.Controls.Add(dateLblUserStatus)
-        mainDashboardStatusPanel.Controls.Add(sexComboBxUserStatus)
-        mainDashboardStatusPanel.Controls.Add(sexLabelUserStatus)
-        mainDashboardStatusPanel.Controls.Add(fullNameTxtBoxUserStatus)
-        mainDashboardStatusPanel.Controls.Add(fullNameLblUserStatus)
-        mainDashboardStatusPanel.Location = New Point(26, 116)
-        mainDashboardStatusPanel.Name = "mainDashboardStatusPanel"
-        mainDashboardStatusPanel.Size = New Size(961, 596)
-        mainDashboardStatusPanel.TabIndex = 3
-        ' 
-        ' addressTxtBxUserStatus
-        ' 
-        addressTxtBxUserStatus.Location = New Point(205, 304)
-        addressTxtBxUserStatus.Name = "addressTxtBxUserStatus"
-        addressTxtBxUserStatus.PlaceholderText = "   Enter your address"
-        addressTxtBxUserStatus.Size = New Size(262, 27)
-        addressTxtBxUserStatus.TabIndex = 8
-        ' 
         ' fullNameTxtBoxUserStatus
         ' 
         fullNameTxtBoxUserStatus.Location = New Point(205, 156)
@@ -348,28 +361,15 @@ Partial Class FillUpForm
         fullNameLblUserStatus.TabIndex = 1
         fullNameLblUserStatus.Text = "Full Name:"
         ' 
-        ' Button1
+        ' logoPicBoxUser
         ' 
-        Button1.BackColor = Color.FromArgb(CByte(49), CByte(48), CByte(77))
-        Button1.FlatStyle = FlatStyle.Popup
-        Button1.ForeColor = SystemColors.ButtonHighlight
-        Button1.Location = New Point(770, 505)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(158, 41)
-        Button1.TabIndex = 19
-        Button1.Text = "Submit"
-        Button1.UseVisualStyleBackColor = False
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("HarmonyOS Sans SC", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = Color.FromArgb(CByte(192), CByte(0), CByte(0))
-        Label2.Location = New Point(26, 71)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(893, 30)
-        Label2.TabIndex = 4
-        Label2.Text = "Hello, new user! Fill up this form first before you to redirect from our dashboard."
+        logoPicBoxUser.Image = My.Resources.Resources.school_bus_12404453
+        logoPicBoxUser.Location = New Point(943, 3)
+        logoPicBoxUser.Name = "logoPicBoxUser"
+        logoPicBoxUser.Size = New Size(68, 61)
+        logoPicBoxUser.SizeMode = PictureBoxSizeMode.Zoom
+        logoPicBoxUser.TabIndex = 2
+        logoPicBoxUser.TabStop = False
         ' 
         ' FillUpForm
         ' 
@@ -386,9 +386,9 @@ Partial Class FillUpForm
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel3.ResumeLayout(False)
         Panel3.PerformLayout()
-        CType(logoPicBoxUser, ComponentModel.ISupportInitialize).EndInit()
         mainDashboardStatusPanel.ResumeLayout(False)
         mainDashboardStatusPanel.PerformLayout()
+        CType(logoPicBoxUser, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
