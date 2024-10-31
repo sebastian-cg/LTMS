@@ -33,7 +33,6 @@ Partial Class UserDashboard
         contentPanelUser = New Panel()
         logoPicBoxUser = New PictureBox()
         mainDashboardPanel = New Panel()
-        submitBtnUserDashB = New Button()
         licenseExpiryPickerUserDashB = New DateTimePicker()
         licenseExpiryLblUserDashB = New Label()
         dLicenseNoTxtBxUserDashB = New TextBox()
@@ -52,13 +51,18 @@ Partial Class UserDashboard
         sexLabelUserDashB = New Label()
         fullNameTxtBoxUserDashB = New TextBox()
         fullNameLblUserDashB = New Label()
-        TextBox1 = New TextBox()
         Panel1 = New Panel()
+        Panel2 = New Panel()
+        PictureBox2 = New PictureBox()
+        Label2 = New Label()
+        Label3 = New Label()
         actionPanelUser.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         contentPanelUser.SuspendLayout()
         CType(logoPicBoxUser, ComponentModel.ISupportInitialize).BeginInit()
         mainDashboardPanel.SuspendLayout()
+        Panel2.SuspendLayout()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' actionPanelUser
@@ -180,7 +184,7 @@ Partial Class UserDashboard
         ' mainDashboardPanel
         ' 
         mainDashboardPanel.BackColor = Color.FromArgb(CByte(182), CByte(187), CByte(196))
-        mainDashboardPanel.Controls.Add(submitBtnUserDashB)
+        mainDashboardPanel.Controls.Add(Panel2)
         mainDashboardPanel.Controls.Add(licenseExpiryPickerUserDashB)
         mainDashboardPanel.Controls.Add(licenseExpiryLblUserDashB)
         mainDashboardPanel.Controls.Add(dLicenseNoTxtBxUserDashB)
@@ -199,23 +203,10 @@ Partial Class UserDashboard
         mainDashboardPanel.Controls.Add(sexLabelUserDashB)
         mainDashboardPanel.Controls.Add(fullNameTxtBoxUserDashB)
         mainDashboardPanel.Controls.Add(fullNameLblUserDashB)
-        mainDashboardPanel.Controls.Add(TextBox1)
         mainDashboardPanel.Location = New Point(28, 166)
         mainDashboardPanel.Name = "mainDashboardPanel"
         mainDashboardPanel.Size = New Size(961, 596)
         mainDashboardPanel.TabIndex = 0
-        ' 
-        ' submitBtnUserDashB
-        ' 
-        submitBtnUserDashB.BackColor = Color.FromArgb(CByte(49), CByte(48), CByte(77))
-        submitBtnUserDashB.FlatStyle = FlatStyle.Popup
-        submitBtnUserDashB.ForeColor = SystemColors.ButtonHighlight
-        submitBtnUserDashB.Location = New Point(812, 472)
-        submitBtnUserDashB.Name = "submitBtnUserDashB"
-        submitBtnUserDashB.Size = New Size(116, 37)
-        submitBtnUserDashB.TabIndex = 19
-        submitBtnUserDashB.Text = "Submit"
-        submitBtnUserDashB.UseVisualStyleBackColor = False
         ' 
         ' licenseExpiryPickerUserDashB
         ' 
@@ -239,7 +230,6 @@ Partial Class UserDashboard
         ' 
         dLicenseNoTxtBxUserDashB.Location = New Point(696, 260)
         dLicenseNoTxtBxUserDashB.Name = "dLicenseNoTxtBxUserDashB"
-        dLicenseNoTxtBxUserDashB.PlaceholderText = "   xxxx-xxx-xxxx"
         dLicenseNoTxtBxUserDashB.Size = New Size(232, 27)
         dLicenseNoTxtBxUserDashB.TabIndex = 16
         ' 
@@ -257,7 +247,6 @@ Partial Class UserDashboard
         ' 
         nationalityTxtBxUserDashB.Location = New Point(651, 209)
         nationalityTxtBxUserDashB.Name = "nationalityTxtBxUserDashB"
-        nationalityTxtBxUserDashB.PlaceholderText = "   Enter your name"
         nationalityTxtBxUserDashB.Size = New Size(277, 27)
         nationalityTxtBxUserDashB.TabIndex = 14
         ' 
@@ -275,7 +264,6 @@ Partial Class UserDashboard
         ' 
         emailTxtBxUserDashB.Location = New Point(651, 156)
         emailTxtBxUserDashB.Name = "emailTxtBxUserDashB"
-        emailTxtBxUserDashB.PlaceholderText = "   Enter your name"
         emailTxtBxUserDashB.Size = New Size(277, 27)
         emailTxtBxUserDashB.TabIndex = 12
         ' 
@@ -310,7 +298,6 @@ Partial Class UserDashboard
         ' 
         addressTxtBxUserDashB.Location = New Point(205, 304)
         addressTxtBxUserDashB.Name = "addressTxtBxUserDashB"
-        addressTxtBxUserDashB.PlaceholderText = "   Enter your address"
         addressTxtBxUserDashB.Size = New Size(262, 27)
         addressTxtBxUserDashB.TabIndex = 8
         ' 
@@ -365,7 +352,6 @@ Partial Class UserDashboard
         ' 
         fullNameTxtBoxUserDashB.Location = New Point(205, 156)
         fullNameTxtBoxUserDashB.Name = "fullNameTxtBoxUserDashB"
-        fullNameTxtBoxUserDashB.PlaceholderText = "   Enter your name"
         fullNameTxtBoxUserDashB.Size = New Size(262, 27)
         fullNameTxtBoxUserDashB.TabIndex = 2
         ' 
@@ -379,13 +365,6 @@ Partial Class UserDashboard
         fullNameLblUserDashB.TabIndex = 1
         fullNameLblUserDashB.Text = "Full Name:"
         ' 
-        ' TextBox1
-        ' 
-        TextBox1.Location = New Point(42, 34)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(125, 27)
-        TextBox1.TabIndex = 0
-        ' 
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(182), CByte(187), CByte(196))
@@ -394,6 +373,49 @@ Partial Class UserDashboard
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(1014, 45)
         Panel1.TabIndex = 2
+        ' 
+        ' Panel2
+        ' 
+        Panel2.BackColor = Color.White
+        Panel2.Controls.Add(Label3)
+        Panel2.Controls.Add(Label2)
+        Panel2.Controls.Add(PictureBox2)
+        Panel2.Location = New Point(53, 25)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(252, 80)
+        Panel2.TabIndex = 19
+        ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.Image = My.Resources.Resources.id_card_12366448
+        PictureBox2.Location = New Point(8, 10)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(69, 62)
+        PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox2.TabIndex = 0
+        PictureBox2.TabStop = False
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("HarmonyOS Sans SC", 10.1999989F, FontStyle.Bold)
+        Label2.Location = New Point(83, 10)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(134, 23)
+        Label2.TabIndex = 1
+        Label2.Text = "Account Status"
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.BackColor = Color.White
+        Label3.Font = New Font("HarmonyOS Sans SC", 11.999999F, FontStyle.Bold)
+        Label3.ForeColor = Color.Lime
+        Label3.Location = New Point(83, 33)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(90, 26)
+        Label3.TabIndex = 2
+        Label3.Text = "Pending"
         ' 
         ' UserDashboard
         ' 
@@ -412,6 +434,9 @@ Partial Class UserDashboard
         CType(logoPicBoxUser, ComponentModel.ISupportInitialize).EndInit()
         mainDashboardPanel.ResumeLayout(False)
         mainDashboardPanel.PerformLayout()
+        Panel2.ResumeLayout(False)
+        Panel2.PerformLayout()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -432,7 +457,6 @@ Partial Class UserDashboard
     Friend WithEvents sexLabelUserDashB As Label
     Friend WithEvents fullNameTxtBoxUserDashB As TextBox
     Friend WithEvents fullNameLblUserDashB As Label
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents datePickerUserDashB As DateTimePicker
     Friend WithEvents phoneTxtBxUserDashB As TextBox
     Friend WithEvents phoneLblUserDashB As Label
@@ -444,7 +468,10 @@ Partial Class UserDashboard
     Friend WithEvents nationalityLblUserDashB As Label
     Friend WithEvents emailTxtBxUserDashB As TextBox
     Friend WithEvents emailLblUserDashB As Label
-    Friend WithEvents submitBtnUserDashB As Button
     Friend WithEvents licenseExpiryPickerUserDashB As DateTimePicker
     Friend WithEvents licenseExpiryLblUserDashB As Label
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
 End Class

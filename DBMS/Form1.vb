@@ -13,8 +13,8 @@
     End Sub
 
     Private Sub loginBtn_Click(sender As Object, e As EventArgs) Handles loginBtn.Click
-        Dim userDashBoard As New UserDashboard
-        userDashBoard.Show()
+        Dim adminDashBoard As New AdminDashboard
+        adminDashBoard.Show()
 
         Me.Hide()
 
