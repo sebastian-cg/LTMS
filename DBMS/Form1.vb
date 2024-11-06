@@ -27,11 +27,20 @@ Public Class Form1
         Dim userRole As String = ""
         Dim isNewUser As Boolean = False
 
-        If ValidateLogin(username, password, userRole, isNewUser) Then
+        Dim currentUserID As Integer
+
+        If ValidateLogin(username, password, userRole, isNewUser, currentUserID) Then
             MessageBox.Show("Login Successfully!")
+
+            'store the retrieved user id to global userID
+            userID = currentUserID
+
             If isNewUser Then
+
+                'pass the user into fillup form if determined as new user
                 Dim fillUpForm As New FillUpForm()
                 fillUpForm.Show()
+
             Else
                 If userRole = "client" Then
                     Dim userDashboard As New UserDashboard()
@@ -48,9 +57,9 @@ Public Class Form1
         End If
         con.Close()
     End Sub
-    Private Function ValidateLogin(username As String, password As String, ByRef userRole As String, ByRef isNewUser As Boolean) As Boolean
+    Private Function ValidateLogin(username As String, password As String, ByRef userRole As String, ByRef isNewUser As Boolean, ByRef userID As Integer) As Boolean
         Dim isValid As Boolean = False
-        Dim query As String = "SELECT user_role, isNewUser FROM users WHERE username = @username AND password = @password"
+        Dim query As String = "SELECT user_id, user_role, isNewUser FROM users WHERE username = @username AND password = @password"
 
         Using command As New MySqlCommand(query, con)
             command.Parameters.AddWithValue("@username", username)
@@ -61,6 +70,7 @@ Public Class Form1
                     If reader.Read() Then
                         ' login succesfull
                         isValid = True
+                        userID = Convert.ToInt32(reader("user_id"))
                         userRole = reader("user_role".ToString())
                         isNewUser = Convert.ToBoolean(reader("isNewUser"))
                     End If

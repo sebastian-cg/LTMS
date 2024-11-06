@@ -24,7 +24,7 @@ Partial Class FillUpForm
     Private Sub InitializeComponent()
         Panel1 = New Panel()
         logoutBtnUser = New Button()
-        downloadBtnUser = New Button()
+        reportBtnNewUser = New Button()
         dashboardBtnUser = New Button()
         Label1 = New Label()
         PictureBox1 = New PictureBox()
@@ -32,24 +32,24 @@ Partial Class FillUpForm
         Panel3 = New Panel()
         Label2 = New Label()
         mainDashboardStatusPanel = New Panel()
-        Button1 = New Button()
-        licenseExpiryPickerUserStatus = New DateTimePicker()
+        submitBtnFF = New Button()
+        licenseExpiryPickerNU = New DateTimePicker()
         licenseExpiryLblUserStatus = New Label()
-        dLicenseNoTxtBxUserStatus = New TextBox()
+        dLicenseNoTxtBxNU = New TextBox()
         dLicenseNoLblUserStatus = New Label()
-        nationalityTxtBxUserStatus = New TextBox()
+        nationalityTxtBxNU = New TextBox()
         nationalityLblUserStatus = New Label()
-        emailTxtBxUserStatus = New TextBox()
+        emailTxtBxNU = New TextBox()
         emailLblUserStatus = New Label()
-        phoneTxtBxUserStatus = New TextBox()
+        phoneTxtBxNU = New TextBox()
         phoneLblUserStatus = New Label()
-        addressTxtBxUserStatus = New TextBox()
+        addressTxtBxNU = New TextBox()
         addressLblUserStatus = New Label()
-        datePickerUserStatus = New DateTimePicker()
+        datePickerNU = New DateTimePicker()
         dateLblUserStatus = New Label()
-        sexComboBxUserStatus = New ComboBox()
+        sexComboBxNU = New ComboBox()
         sexLabelUserStatus = New Label()
-        fullNameTxtBoxUserStatus = New TextBox()
+        fullNameTxtBoxNU = New TextBox()
         fullNameLblUserStatus = New Label()
         logoPicBoxUser = New PictureBox()
         Panel1.SuspendLayout()
@@ -63,7 +63,7 @@ Partial Class FillUpForm
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(182), CByte(187), CByte(196))
         Panel1.Controls.Add(logoutBtnUser)
-        Panel1.Controls.Add(downloadBtnUser)
+        Panel1.Controls.Add(reportBtnNewUser)
         Panel1.Controls.Add(dashboardBtnUser)
         Panel1.Controls.Add(Label1)
         Panel1.Controls.Add(PictureBox1)
@@ -85,17 +85,17 @@ Partial Class FillUpForm
         logoutBtnUser.Text = "Logout"
         logoutBtnUser.UseVisualStyleBackColor = False
         ' 
-        ' downloadBtnUser
+        ' reportBtnNewUser
         ' 
-        downloadBtnUser.BackColor = Color.FromArgb(CByte(49), CByte(48), CByte(77))
-        downloadBtnUser.FlatStyle = FlatStyle.Popup
-        downloadBtnUser.ForeColor = SystemColors.ButtonHighlight
-        downloadBtnUser.Location = New Point(44, 299)
-        downloadBtnUser.Name = "downloadBtnUser"
-        downloadBtnUser.Size = New Size(158, 41)
-        downloadBtnUser.TabIndex = 10
-        downloadBtnUser.Text = "Report"
-        downloadBtnUser.UseVisualStyleBackColor = False
+        reportBtnNewUser.BackColor = Color.FromArgb(CByte(49), CByte(48), CByte(77))
+        reportBtnNewUser.FlatStyle = FlatStyle.Popup
+        reportBtnNewUser.ForeColor = SystemColors.ButtonHighlight
+        reportBtnNewUser.Location = New Point(44, 299)
+        reportBtnNewUser.Name = "reportBtnNewUser"
+        reportBtnNewUser.Size = New Size(158, 41)
+        reportBtnNewUser.TabIndex = 10
+        reportBtnNewUser.Text = "Report"
+        reportBtnNewUser.UseVisualStyleBackColor = False
         ' 
         ' dashboardBtnUser
         ' 
@@ -163,49 +163,49 @@ Partial Class FillUpForm
         ' mainDashboardStatusPanel
         ' 
         mainDashboardStatusPanel.BackColor = Color.FromArgb(CByte(182), CByte(187), CByte(196))
-        mainDashboardStatusPanel.Controls.Add(Button1)
-        mainDashboardStatusPanel.Controls.Add(licenseExpiryPickerUserStatus)
+        mainDashboardStatusPanel.Controls.Add(submitBtnFF)
+        mainDashboardStatusPanel.Controls.Add(licenseExpiryPickerNU)
         mainDashboardStatusPanel.Controls.Add(licenseExpiryLblUserStatus)
-        mainDashboardStatusPanel.Controls.Add(dLicenseNoTxtBxUserStatus)
+        mainDashboardStatusPanel.Controls.Add(dLicenseNoTxtBxNU)
         mainDashboardStatusPanel.Controls.Add(dLicenseNoLblUserStatus)
-        mainDashboardStatusPanel.Controls.Add(nationalityTxtBxUserStatus)
+        mainDashboardStatusPanel.Controls.Add(nationalityTxtBxNU)
         mainDashboardStatusPanel.Controls.Add(nationalityLblUserStatus)
-        mainDashboardStatusPanel.Controls.Add(emailTxtBxUserStatus)
+        mainDashboardStatusPanel.Controls.Add(emailTxtBxNU)
         mainDashboardStatusPanel.Controls.Add(emailLblUserStatus)
-        mainDashboardStatusPanel.Controls.Add(phoneTxtBxUserStatus)
+        mainDashboardStatusPanel.Controls.Add(phoneTxtBxNU)
         mainDashboardStatusPanel.Controls.Add(phoneLblUserStatus)
-        mainDashboardStatusPanel.Controls.Add(addressTxtBxUserStatus)
+        mainDashboardStatusPanel.Controls.Add(addressTxtBxNU)
         mainDashboardStatusPanel.Controls.Add(addressLblUserStatus)
-        mainDashboardStatusPanel.Controls.Add(datePickerUserStatus)
+        mainDashboardStatusPanel.Controls.Add(datePickerNU)
         mainDashboardStatusPanel.Controls.Add(dateLblUserStatus)
-        mainDashboardStatusPanel.Controls.Add(sexComboBxUserStatus)
+        mainDashboardStatusPanel.Controls.Add(sexComboBxNU)
         mainDashboardStatusPanel.Controls.Add(sexLabelUserStatus)
-        mainDashboardStatusPanel.Controls.Add(fullNameTxtBoxUserStatus)
+        mainDashboardStatusPanel.Controls.Add(fullNameTxtBoxNU)
         mainDashboardStatusPanel.Controls.Add(fullNameLblUserStatus)
         mainDashboardStatusPanel.Location = New Point(26, 116)
         mainDashboardStatusPanel.Name = "mainDashboardStatusPanel"
         mainDashboardStatusPanel.Size = New Size(961, 596)
         mainDashboardStatusPanel.TabIndex = 3
         ' 
-        ' Button1
+        ' submitBtnFF
         ' 
-        Button1.BackColor = Color.FromArgb(CByte(49), CByte(48), CByte(77))
-        Button1.FlatStyle = FlatStyle.Popup
-        Button1.ForeColor = SystemColors.ButtonHighlight
-        Button1.Location = New Point(770, 505)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(158, 41)
-        Button1.TabIndex = 19
-        Button1.Text = "Submit"
-        Button1.UseVisualStyleBackColor = False
+        submitBtnFF.BackColor = Color.FromArgb(CByte(49), CByte(48), CByte(77))
+        submitBtnFF.FlatStyle = FlatStyle.Popup
+        submitBtnFF.ForeColor = SystemColors.ButtonHighlight
+        submitBtnFF.Location = New Point(770, 505)
+        submitBtnFF.Name = "submitBtnFF"
+        submitBtnFF.Size = New Size(158, 41)
+        submitBtnFF.TabIndex = 19
+        submitBtnFF.Text = "Submit"
+        submitBtnFF.UseVisualStyleBackColor = False
         ' 
-        ' licenseExpiryPickerUserStatus
+        ' licenseExpiryPickerNU
         ' 
-        licenseExpiryPickerUserStatus.Format = DateTimePickerFormat.Custom
-        licenseExpiryPickerUserStatus.Location = New Point(696, 304)
-        licenseExpiryPickerUserStatus.Name = "licenseExpiryPickerUserStatus"
-        licenseExpiryPickerUserStatus.Size = New Size(131, 27)
-        licenseExpiryPickerUserStatus.TabIndex = 18
+        licenseExpiryPickerNU.Format = DateTimePickerFormat.Custom
+        licenseExpiryPickerNU.Location = New Point(696, 304)
+        licenseExpiryPickerNU.Name = "licenseExpiryPickerNU"
+        licenseExpiryPickerNU.Size = New Size(131, 27)
+        licenseExpiryPickerNU.TabIndex = 18
         ' 
         ' licenseExpiryLblUserStatus
         ' 
@@ -217,13 +217,13 @@ Partial Class FillUpForm
         licenseExpiryLblUserStatus.TabIndex = 17
         licenseExpiryLblUserStatus.Text = "License Expiry Date:"
         ' 
-        ' dLicenseNoTxtBxUserStatus
+        ' dLicenseNoTxtBxNU
         ' 
-        dLicenseNoTxtBxUserStatus.Location = New Point(696, 260)
-        dLicenseNoTxtBxUserStatus.Name = "dLicenseNoTxtBxUserStatus"
-        dLicenseNoTxtBxUserStatus.PlaceholderText = "   xxxx-xxx-xxxx"
-        dLicenseNoTxtBxUserStatus.Size = New Size(232, 27)
-        dLicenseNoTxtBxUserStatus.TabIndex = 16
+        dLicenseNoTxtBxNU.Location = New Point(696, 260)
+        dLicenseNoTxtBxNU.Name = "dLicenseNoTxtBxNU"
+        dLicenseNoTxtBxNU.PlaceholderText = "   xxxx-xxx-xxxx"
+        dLicenseNoTxtBxNU.Size = New Size(232, 27)
+        dLicenseNoTxtBxNU.TabIndex = 16
         ' 
         ' dLicenseNoLblUserStatus
         ' 
@@ -235,13 +235,13 @@ Partial Class FillUpForm
         dLicenseNoLblUserStatus.TabIndex = 15
         dLicenseNoLblUserStatus.Text = "Driving License No. :"
         ' 
-        ' nationalityTxtBxUserStatus
+        ' nationalityTxtBxNU
         ' 
-        nationalityTxtBxUserStatus.Location = New Point(651, 209)
-        nationalityTxtBxUserStatus.Name = "nationalityTxtBxUserStatus"
-        nationalityTxtBxUserStatus.PlaceholderText = "   Enter your name"
-        nationalityTxtBxUserStatus.Size = New Size(277, 27)
-        nationalityTxtBxUserStatus.TabIndex = 14
+        nationalityTxtBxNU.Location = New Point(651, 209)
+        nationalityTxtBxNU.Name = "nationalityTxtBxNU"
+        nationalityTxtBxNU.PlaceholderText = "   Enter your name"
+        nationalityTxtBxNU.Size = New Size(277, 27)
+        nationalityTxtBxNU.TabIndex = 14
         ' 
         ' nationalityLblUserStatus
         ' 
@@ -253,13 +253,13 @@ Partial Class FillUpForm
         nationalityLblUserStatus.TabIndex = 13
         nationalityLblUserStatus.Text = "Nationality:"
         ' 
-        ' emailTxtBxUserStatus
+        ' emailTxtBxNU
         ' 
-        emailTxtBxUserStatus.Location = New Point(651, 156)
-        emailTxtBxUserStatus.Name = "emailTxtBxUserStatus"
-        emailTxtBxUserStatus.PlaceholderText = "   Enter your name"
-        emailTxtBxUserStatus.Size = New Size(277, 27)
-        emailTxtBxUserStatus.TabIndex = 12
+        emailTxtBxNU.Location = New Point(651, 156)
+        emailTxtBxNU.Name = "emailTxtBxNU"
+        emailTxtBxNU.PlaceholderText = "   Enter your name"
+        emailTxtBxNU.Size = New Size(277, 27)
+        emailTxtBxNU.TabIndex = 12
         ' 
         ' emailLblUserStatus
         ' 
@@ -271,12 +271,12 @@ Partial Class FillUpForm
         emailLblUserStatus.TabIndex = 11
         emailLblUserStatus.Text = "Email:"
         ' 
-        ' phoneTxtBxUserStatus
+        ' phoneTxtBxNU
         ' 
-        phoneTxtBxUserStatus.Location = New Point(205, 355)
-        phoneTxtBxUserStatus.Name = "phoneTxtBxUserStatus"
-        phoneTxtBxUserStatus.Size = New Size(262, 27)
-        phoneTxtBxUserStatus.TabIndex = 10
+        phoneTxtBxNU.Location = New Point(205, 355)
+        phoneTxtBxNU.Name = "phoneTxtBxNU"
+        phoneTxtBxNU.Size = New Size(262, 27)
+        phoneTxtBxNU.TabIndex = 10
         ' 
         ' phoneLblUserStatus
         ' 
@@ -288,13 +288,13 @@ Partial Class FillUpForm
         phoneLblUserStatus.TabIndex = 9
         phoneLblUserStatus.Text = "Phone Number:"
         ' 
-        ' addressTxtBxUserStatus
+        ' addressTxtBxNU
         ' 
-        addressTxtBxUserStatus.Location = New Point(205, 304)
-        addressTxtBxUserStatus.Name = "addressTxtBxUserStatus"
-        addressTxtBxUserStatus.PlaceholderText = "   Enter your address"
-        addressTxtBxUserStatus.Size = New Size(262, 27)
-        addressTxtBxUserStatus.TabIndex = 8
+        addressTxtBxNU.Location = New Point(205, 304)
+        addressTxtBxNU.Name = "addressTxtBxNU"
+        addressTxtBxNU.PlaceholderText = "   Enter your address"
+        addressTxtBxNU.Size = New Size(262, 27)
+        addressTxtBxNU.TabIndex = 8
         ' 
         ' addressLblUserStatus
         ' 
@@ -306,13 +306,13 @@ Partial Class FillUpForm
         addressLblUserStatus.TabIndex = 7
         addressLblUserStatus.Text = "Address:"
         ' 
-        ' datePickerUserStatus
+        ' datePickerNU
         ' 
-        datePickerUserStatus.Format = DateTimePickerFormat.Custom
-        datePickerUserStatus.Location = New Point(205, 258)
-        datePickerUserStatus.Name = "datePickerUserStatus"
-        datePickerUserStatus.Size = New Size(131, 27)
-        datePickerUserStatus.TabIndex = 6
+        datePickerNU.Format = DateTimePickerFormat.Custom
+        datePickerNU.Location = New Point(205, 258)
+        datePickerNU.Name = "datePickerNU"
+        datePickerNU.Size = New Size(131, 27)
+        datePickerNU.TabIndex = 6
         ' 
         ' dateLblUserStatus
         ' 
@@ -324,14 +324,14 @@ Partial Class FillUpForm
         dateLblUserStatus.TabIndex = 5
         dateLblUserStatus.Text = "Date of Birth:"
         ' 
-        ' sexComboBxUserStatus
+        ' sexComboBxNU
         ' 
-        sexComboBxUserStatus.FormattingEnabled = True
-        sexComboBxUserStatus.Items.AddRange(New Object() {"Male", "Female"})
-        sexComboBxUserStatus.Location = New Point(205, 208)
-        sexComboBxUserStatus.Name = "sexComboBxUserStatus"
-        sexComboBxUserStatus.Size = New Size(131, 28)
-        sexComboBxUserStatus.TabIndex = 4
+        sexComboBxNU.FormattingEnabled = True
+        sexComboBxNU.Items.AddRange(New Object() {"Male", "Female"})
+        sexComboBxNU.Location = New Point(205, 208)
+        sexComboBxNU.Name = "sexComboBxNU"
+        sexComboBxNU.Size = New Size(131, 28)
+        sexComboBxNU.TabIndex = 4
         ' 
         ' sexLabelUserStatus
         ' 
@@ -343,13 +343,13 @@ Partial Class FillUpForm
         sexLabelUserStatus.TabIndex = 3
         sexLabelUserStatus.Text = "Sex:"
         ' 
-        ' fullNameTxtBoxUserStatus
+        ' fullNameTxtBoxNU
         ' 
-        fullNameTxtBoxUserStatus.Location = New Point(205, 156)
-        fullNameTxtBoxUserStatus.Name = "fullNameTxtBoxUserStatus"
-        fullNameTxtBoxUserStatus.PlaceholderText = "   Enter your name"
-        fullNameTxtBoxUserStatus.Size = New Size(262, 27)
-        fullNameTxtBoxUserStatus.TabIndex = 2
+        fullNameTxtBoxNU.Location = New Point(205, 156)
+        fullNameTxtBoxNU.Name = "fullNameTxtBoxNU"
+        fullNameTxtBoxNU.PlaceholderText = "   Enter your name"
+        fullNameTxtBoxNU.Size = New Size(262, 27)
+        fullNameTxtBoxNU.TabIndex = 2
         ' 
         ' fullNameLblUserStatus
         ' 
@@ -394,7 +394,7 @@ Partial Class FillUpForm
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents logoutBtnUser As Button
-    Friend WithEvents downloadBtnUser As Button
+    Friend WithEvents reportBtnNewUser As Button
     Friend WithEvents dashboardBtnUser As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
@@ -402,24 +402,24 @@ Partial Class FillUpForm
     Friend WithEvents Panel3 As Panel
     Friend WithEvents logoPicBoxUser As PictureBox
     Friend WithEvents mainDashboardStatusPanel As Panel
-    Friend WithEvents licenseExpiryPickerUserStatus As DateTimePicker
+    Friend WithEvents licenseExpiryPickerNU As DateTimePicker
     Friend WithEvents licenseExpiryLblUserStatus As Label
-    Friend WithEvents dLicenseNoTxtBxUserStatus As TextBox
+    Friend WithEvents dLicenseNoTxtBxNU As TextBox
     Friend WithEvents dLicenseNoLblUserStatus As Label
-    Friend WithEvents nationalityTxtBxUserStatus As TextBox
+    Friend WithEvents nationalityTxtBxNU As TextBox
     Friend WithEvents nationalityLblUserStatus As Label
-    Friend WithEvents emailTxtBxUserStatus As TextBox
+    Friend WithEvents emailTxtBxNU As TextBox
     Friend WithEvents emailLblUserStatus As Label
-    Friend WithEvents phoneTxtBxUserStatus As TextBox
+    Friend WithEvents phoneTxtBxNU As TextBox
     Friend WithEvents phoneLblUserStatus As Label
-    Friend WithEvents addressTxtBxUserStatus As TextBox
+    Friend WithEvents addressTxtBxNU As TextBox
     Friend WithEvents addressLblUserStatus As Label
-    Friend WithEvents datePickerUserStatus As DateTimePicker
+    Friend WithEvents datePickerNU As DateTimePicker
     Friend WithEvents dateLblUserStatus As Label
-    Friend WithEvents sexComboBxUserStatus As ComboBox
+    Friend WithEvents sexComboBxNU As ComboBox
     Friend WithEvents sexLabelUserStatus As Label
-    Friend WithEvents fullNameTxtBoxUserStatus As TextBox
+    Friend WithEvents fullNameTxtBoxNU As TextBox
     Friend WithEvents fullNameLblUserStatus As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents submitBtnFF As Button
     Friend WithEvents Label2 As Label
 End Class
