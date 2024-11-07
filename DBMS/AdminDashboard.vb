@@ -25,4 +25,28 @@
     Private Sub btnDeclineAccounts_Click(sender As Object, e As EventArgs) Handles btnDeclineAccounts.Click
         panelDropdown.Visible = False
     End Sub
+
+    Private Sub databaseBtnAdmin_Click(sender As Object, e As EventArgs) Handles databaseBtnAdmin.Click
+        databaseDDPanel.Visible = Not databaseDDPanel.Visible
+    End Sub
+
+    Private Sub clientsBtnAdmin_Click(sender As Object, e As EventArgs) Handles clientsBtnAdmin.Click
+        databaseDDPanel.Visible = False
+    End Sub
+
+    Private Sub vehiclesBtnAdmin_Click(sender As Object, e As EventArgs) Handles vehiclesBtnAdmin.Click
+        databaseDDPanel.Visible = False
+    End Sub
+
+    Private Sub appointmentBtnAdmin_Click(sender As Object, e As EventArgs) Handles appointmentBtnAdmin.Click
+        databaseDDPanel.Visible = False
+    End Sub
+
+    Private Sub violationBtnAdmin_Click(sender As Object, e As EventArgs) Handles violationBtnAdmin.Click
+        databaseDDPanel.Visible = False
+    End Sub
+
+    Private Sub accidentBtnAdmin_Click(sender As Object, e As EventArgs) Handles accidentBtnAdmin.Click
+        databaseDDPanel.Visible = False
+    End Sub
 End Class

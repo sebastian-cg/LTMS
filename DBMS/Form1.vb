@@ -46,7 +46,7 @@ Public Class Form1
                     Dim userDashboard As New UserDashboard()
                     userDashboard.Show()
                 ElseIf userRole = "admin" Then
-                    Dim adminDashboard As New AdminDashboard
+                    Dim adminDashboard As New AdminDashboard()
                     adminDashboard.Show()
 
                 End If

@@ -24,6 +24,13 @@ Partial Class AdminDashboard
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AdminDashboard))
         sidePanelAdminDB = New Panel()
+        databaseDDPanel = New Panel()
+        accidentBtnAdmin = New Button()
+        violationBtnAdmin = New Button()
+        appointmentBtnAdmin = New Button()
+        vehiclesBtnAdmin = New Button()
+        clientsBtnAdmin = New Button()
+        databaseBtnAdmin = New Button()
         panelDropdown = New Panel()
         btnDeclineAccounts = New Button()
         btnPendingAccounts = New Button()
@@ -41,6 +48,10 @@ Partial Class AdminDashboard
         adminIdAdminDb = New Label()
         welcomeLbl = New Label()
         mainPanelAdminDB = New Panel()
+        emailPanelAdmin = New Panel()
+        Label1 = New Label()
+        emailLblAdmin = New Label()
+        ic_email = New PictureBox()
         DApanelAdminDB = New Panel()
         numDAadminDB = New Label()
         DAlblAdminDB = New Label()
@@ -60,11 +71,14 @@ Partial Class AdminDashboard
         adminDGV = New DataGridView()
         DTPadminDB = New DateTimePicker()
         sidePanelAdminDB.SuspendLayout()
+        databaseDDPanel.SuspendLayout()
         panelDropdown.SuspendLayout()
         CType(ic_accountAdminDb, ComponentModel.ISupportInitialize).BeginInit()
         CType(ic_logoAdminDB, ComponentModel.ISupportInitialize).BeginInit()
         centerPanelAdminDB.SuspendLayout()
         mainPanelAdminDB.SuspendLayout()
+        emailPanelAdmin.SuspendLayout()
+        CType(ic_email, ComponentModel.ISupportInitialize).BeginInit()
         DApanelAdminDB.SuspendLayout()
         CType(ic_DAadminDB, ComponentModel.ISupportInitialize).BeginInit()
         CApanelAdminDB.SuspendLayout()
@@ -78,6 +92,7 @@ Partial Class AdminDashboard
         ' sidePanelAdminDB
         ' 
         sidePanelAdminDB.BackColor = Color.FromArgb(CByte(182), CByte(187), CByte(196))
+        sidePanelAdminDB.Controls.Add(databaseDDPanel)
         sidePanelAdminDB.Controls.Add(panelDropdown)
         sidePanelAdminDB.Controls.Add(reportBtnAdminDB)
         sidePanelAdminDB.Controls.Add(logoutBtnAdminDB)
@@ -86,11 +101,90 @@ Partial Class AdminDashboard
         sidePanelAdminDB.Controls.Add(userBtnAdminDB)
         sidePanelAdminDB.Controls.Add(dashboardBtnAdminDB)
         sidePanelAdminDB.Controls.Add(ic_accountAdminDb)
+        sidePanelAdminDB.Controls.Add(databaseBtnAdmin)
         sidePanelAdminDB.Dock = DockStyle.Left
         sidePanelAdminDB.Location = New Point(0, 0)
         sidePanelAdminDB.Name = "sidePanelAdminDB"
-        sidePanelAdminDB.Size = New Size(250, 791)
+        sidePanelAdminDB.Size = New Size(250, 887)
         sidePanelAdminDB.TabIndex = 0
+        ' 
+        ' databaseDDPanel
+        ' 
+        databaseDDPanel.BackColor = Color.White
+        databaseDDPanel.BorderStyle = BorderStyle.FixedSingle
+        databaseDDPanel.Controls.Add(accidentBtnAdmin)
+        databaseDDPanel.Controls.Add(violationBtnAdmin)
+        databaseDDPanel.Controls.Add(appointmentBtnAdmin)
+        databaseDDPanel.Controls.Add(vehiclesBtnAdmin)
+        databaseDDPanel.Controls.Add(clientsBtnAdmin)
+        databaseDDPanel.Location = New Point(40, 560)
+        databaseDDPanel.Name = "databaseDDPanel"
+        databaseDDPanel.Size = New Size(158, 231)
+        databaseDDPanel.TabIndex = 11
+        databaseDDPanel.Visible = False
+        ' 
+        ' accidentBtnAdmin
+        ' 
+        accidentBtnAdmin.FlatStyle = FlatStyle.Popup
+        accidentBtnAdmin.Location = New Point(3, 179)
+        accidentBtnAdmin.Name = "accidentBtnAdmin"
+        accidentBtnAdmin.Size = New Size(150, 35)
+        accidentBtnAdmin.TabIndex = 4
+        accidentBtnAdmin.Text = "Accidents Report"
+        accidentBtnAdmin.UseVisualStyleBackColor = True
+        ' 
+        ' violationBtnAdmin
+        ' 
+        violationBtnAdmin.FlatStyle = FlatStyle.Popup
+        violationBtnAdmin.Location = New Point(3, 138)
+        violationBtnAdmin.Name = "violationBtnAdmin"
+        violationBtnAdmin.Size = New Size(150, 35)
+        violationBtnAdmin.TabIndex = 3
+        violationBtnAdmin.Text = "Violations"
+        violationBtnAdmin.UseVisualStyleBackColor = True
+        ' 
+        ' appointmentBtnAdmin
+        ' 
+        appointmentBtnAdmin.FlatStyle = FlatStyle.Popup
+        appointmentBtnAdmin.Location = New Point(3, 97)
+        appointmentBtnAdmin.Name = "appointmentBtnAdmin"
+        appointmentBtnAdmin.Size = New Size(150, 35)
+        appointmentBtnAdmin.TabIndex = 2
+        appointmentBtnAdmin.Text = "Appointments"
+        appointmentBtnAdmin.UseVisualStyleBackColor = True
+        ' 
+        ' vehiclesBtnAdmin
+        ' 
+        vehiclesBtnAdmin.FlatStyle = FlatStyle.Popup
+        vehiclesBtnAdmin.Location = New Point(3, 53)
+        vehiclesBtnAdmin.Name = "vehiclesBtnAdmin"
+        vehiclesBtnAdmin.Size = New Size(150, 35)
+        vehiclesBtnAdmin.TabIndex = 1
+        vehiclesBtnAdmin.Text = "Vehicles"
+        vehiclesBtnAdmin.UseVisualStyleBackColor = True
+        ' 
+        ' clientsBtnAdmin
+        ' 
+        clientsBtnAdmin.FlatStyle = FlatStyle.Popup
+        clientsBtnAdmin.Location = New Point(3, 12)
+        clientsBtnAdmin.Name = "clientsBtnAdmin"
+        clientsBtnAdmin.Size = New Size(150, 35)
+        clientsBtnAdmin.TabIndex = 0
+        clientsBtnAdmin.Text = "Clients"
+        clientsBtnAdmin.UseVisualStyleBackColor = True
+        ' 
+        ' databaseBtnAdmin
+        ' 
+        databaseBtnAdmin.BackColor = Color.FromArgb(CByte(49), CByte(48), CByte(77))
+        databaseBtnAdmin.FlatStyle = FlatStyle.Popup
+        databaseBtnAdmin.Font = New Font("HarmonyOS Sans SC", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        databaseBtnAdmin.ForeColor = SystemColors.ButtonHighlight
+        databaseBtnAdmin.Location = New Point(40, 513)
+        databaseBtnAdmin.Name = "databaseBtnAdmin"
+        databaseBtnAdmin.Size = New Size(158, 41)
+        databaseBtnAdmin.TabIndex = 11
+        databaseBtnAdmin.Text = "Database"
+        databaseBtnAdmin.UseVisualStyleBackColor = False
         ' 
         ' panelDropdown
         ' 
@@ -99,7 +193,7 @@ Partial Class AdminDashboard
         panelDropdown.Controls.Add(btnDeclineAccounts)
         panelDropdown.Controls.Add(btnPendingAccounts)
         panelDropdown.Controls.Add(btnCompletedAccounts)
-        panelDropdown.Location = New Point(40, 402)
+        panelDropdown.Location = New Point(40, 359)
         panelDropdown.Name = "panelDropdown"
         panelDropdown.Size = New Size(158, 231)
         panelDropdown.TabIndex = 10
@@ -141,7 +235,7 @@ Partial Class AdminDashboard
         reportBtnAdminDB.FlatStyle = FlatStyle.Popup
         reportBtnAdminDB.Font = New Font("HarmonyOS Sans SC", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         reportBtnAdminDB.ForeColor = SystemColors.ButtonHighlight
-        reportBtnAdminDB.Location = New Point(40, 358)
+        reportBtnAdminDB.Location = New Point(40, 312)
         reportBtnAdminDB.Name = "reportBtnAdminDB"
         reportBtnAdminDB.Size = New Size(158, 41)
         reportBtnAdminDB.TabIndex = 9
@@ -153,7 +247,7 @@ Partial Class AdminDashboard
         logoutBtnAdminDB.BackColor = Color.FromArgb(CByte(49), CByte(48), CByte(77))
         logoutBtnAdminDB.FlatStyle = FlatStyle.Popup
         logoutBtnAdminDB.ForeColor = SystemColors.ButtonHighlight
-        logoutBtnAdminDB.Location = New Point(27, 732)
+        logoutBtnAdminDB.Location = New Point(23, 834)
         logoutBtnAdminDB.Name = "logoutBtnAdminDB"
         logoutBtnAdminDB.Size = New Size(203, 41)
         logoutBtnAdminDB.TabIndex = 8
@@ -166,7 +260,7 @@ Partial Class AdminDashboard
         SDBtnAdminDB.FlatStyle = FlatStyle.Popup
         SDBtnAdminDB.Font = New Font("HarmonyOS Sans SC", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         SDBtnAdminDB.ForeColor = SystemColors.ButtonHighlight
-        SDBtnAdminDB.Location = New Point(40, 478)
+        SDBtnAdminDB.Location = New Point(40, 441)
         SDBtnAdminDB.Name = "SDBtnAdminDB"
         SDBtnAdminDB.Size = New Size(158, 49)
         SDBtnAdminDB.TabIndex = 7
@@ -179,7 +273,7 @@ Partial Class AdminDashboard
         emailBtnAdminDB.FlatStyle = FlatStyle.Popup
         emailBtnAdminDB.Font = New Font("HarmonyOS Sans SC", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         emailBtnAdminDB.ForeColor = SystemColors.ButtonHighlight
-        emailBtnAdminDB.Location = New Point(40, 418)
+        emailBtnAdminDB.Location = New Point(40, 381)
         emailBtnAdminDB.Name = "emailBtnAdminDB"
         emailBtnAdminDB.Size = New Size(158, 41)
         emailBtnAdminDB.TabIndex = 6
@@ -192,7 +286,7 @@ Partial Class AdminDashboard
         userBtnAdminDB.FlatStyle = FlatStyle.Popup
         userBtnAdminDB.Font = New Font("HarmonyOS Sans SC", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         userBtnAdminDB.ForeColor = SystemColors.ButtonHighlight
-        userBtnAdminDB.Location = New Point(40, 298)
+        userBtnAdminDB.Location = New Point(40, 252)
         userBtnAdminDB.Name = "userBtnAdminDB"
         userBtnAdminDB.Size = New Size(158, 41)
         userBtnAdminDB.TabIndex = 4
@@ -205,7 +299,7 @@ Partial Class AdminDashboard
         dashboardBtnAdminDB.FlatStyle = FlatStyle.Popup
         dashboardBtnAdminDB.Font = New Font("HarmonyOS Sans SC", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         dashboardBtnAdminDB.ForeColor = SystemColors.ButtonHighlight
-        dashboardBtnAdminDB.Location = New Point(40, 236)
+        dashboardBtnAdminDB.Location = New Point(40, 190)
         dashboardBtnAdminDB.Name = "dashboardBtnAdminDB"
         dashboardBtnAdminDB.Size = New Size(158, 41)
         dashboardBtnAdminDB.TabIndex = 3
@@ -228,13 +322,13 @@ Partial Class AdminDashboard
         topPanelAdminDB.Dock = DockStyle.Top
         topPanelAdminDB.Location = New Point(250, 0)
         topPanelAdminDB.Name = "topPanelAdminDB"
-        topPanelAdminDB.Size = New Size(1014, 36)
+        topPanelAdminDB.Size = New Size(1283, 36)
         topPanelAdminDB.TabIndex = 1
         ' 
         ' ic_logoAdminDB
         ' 
         ic_logoAdminDB.Image = My.Resources.Resources.school_bus_12404453
-        ic_logoAdminDB.Location = New Point(935, 6)
+        ic_logoAdminDB.Location = New Point(1213, 6)
         ic_logoAdminDB.Name = "ic_logoAdminDB"
         ic_logoAdminDB.Size = New Size(67, 62)
         ic_logoAdminDB.SizeMode = PictureBoxSizeMode.Zoom
@@ -250,7 +344,7 @@ Partial Class AdminDashboard
         centerPanelAdminDB.Dock = DockStyle.Fill
         centerPanelAdminDB.Location = New Point(250, 36)
         centerPanelAdminDB.Name = "centerPanelAdminDB"
-        centerPanelAdminDB.Size = New Size(1014, 755)
+        centerPanelAdminDB.Size = New Size(1283, 851)
         centerPanelAdminDB.TabIndex = 3
         ' 
         ' adminIdAdminDb
@@ -277,14 +371,58 @@ Partial Class AdminDashboard
         ' mainPanelAdminDB
         ' 
         mainPanelAdminDB.BackColor = Color.FromArgb(CByte(182), CByte(187), CByte(196))
+        mainPanelAdminDB.Controls.Add(emailPanelAdmin)
         mainPanelAdminDB.Controls.Add(DApanelAdminDB)
         mainPanelAdminDB.Controls.Add(CApanelAdminDB)
         mainPanelAdminDB.Controls.Add(panelPAadminDB)
         mainPanelAdminDB.Controls.Add(contentPanelAdminDB)
         mainPanelAdminDB.Location = New Point(26, 83)
         mainPanelAdminDB.Name = "mainPanelAdminDB"
-        mainPanelAdminDB.Size = New Size(963, 654)
+        mainPanelAdminDB.Size = New Size(1245, 756)
         mainPanelAdminDB.TabIndex = 3
+        ' 
+        ' emailPanelAdmin
+        ' 
+        emailPanelAdmin.BackColor = Color.White
+        emailPanelAdmin.BorderStyle = BorderStyle.FixedSingle
+        emailPanelAdmin.Controls.Add(Label1)
+        emailPanelAdmin.Controls.Add(emailLblAdmin)
+        emailPanelAdmin.Controls.Add(ic_email)
+        emailPanelAdmin.Location = New Point(991, 15)
+        emailPanelAdmin.Name = "emailPanelAdmin"
+        emailPanelAdmin.Size = New Size(230, 70)
+        emailPanelAdmin.TabIndex = 5
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("HarmonyOS Sans SC", 11.999999F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = Color.Lime
+        Label1.Location = New Point(59, 35)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(24, 26)
+        Label1.TabIndex = 2
+        Label1.Text = "3"
+        ' 
+        ' emailLblAdmin
+        ' 
+        emailLblAdmin.AutoSize = True
+        emailLblAdmin.Font = New Font("HarmonyOS Sans SC", 10.1999989F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        emailLblAdmin.Location = New Point(59, 12)
+        emailLblAdmin.Name = "emailLblAdmin"
+        emailLblAdmin.Size = New Size(63, 23)
+        emailLblAdmin.TabIndex = 1
+        emailLblAdmin.Text = "Emails"
+        ' 
+        ' ic_email
+        ' 
+        ic_email.Image = CType(resources.GetObject("ic_email.Image"), Image)
+        ic_email.Location = New Point(12, 12)
+        ic_email.Name = "ic_email"
+        ic_email.Size = New Size(41, 42)
+        ic_email.SizeMode = PictureBoxSizeMode.Zoom
+        ic_email.TabIndex = 0
+        ic_email.TabStop = False
         ' 
         ' DApanelAdminDB
         ' 
@@ -293,7 +431,7 @@ Partial Class AdminDashboard
         DApanelAdminDB.Controls.Add(numDAadminDB)
         DApanelAdminDB.Controls.Add(DAlblAdminDB)
         DApanelAdminDB.Controls.Add(ic_DAadminDB)
-        DApanelAdminDB.Location = New Point(601, 15)
+        DApanelAdminDB.Location = New Point(669, 15)
         DApanelAdminDB.Name = "DApanelAdminDB"
         DApanelAdminDB.Size = New Size(230, 70)
         DApanelAdminDB.TabIndex = 4
@@ -336,7 +474,7 @@ Partial Class AdminDashboard
         CApanelAdminDB.Controls.Add(numCAadminDB)
         CApanelAdminDB.Controls.Add(CAlblAdminDB)
         CApanelAdminDB.Controls.Add(ic_CAadminDB)
-        CApanelAdminDB.Location = New Point(302, 15)
+        CApanelAdminDB.Location = New Point(339, 15)
         CApanelAdminDB.Name = "CApanelAdminDB"
         CApanelAdminDB.Size = New Size(248, 70)
         CApanelAdminDB.TabIndex = 3
@@ -426,7 +564,7 @@ Partial Class AdminDashboard
         contentPanelAdminDB.Controls.Add(DTPadminDB)
         contentPanelAdminDB.Location = New Point(29, 99)
         contentPanelAdminDB.Name = "contentPanelAdminDB"
-        contentPanelAdminDB.Size = New Size(908, 536)
+        contentPanelAdminDB.Size = New Size(1192, 638)
         contentPanelAdminDB.TabIndex = 0
         ' 
         ' viewBtnAdminDb
@@ -435,7 +573,7 @@ Partial Class AdminDashboard
         viewBtnAdminDb.FlatStyle = FlatStyle.Popup
         viewBtnAdminDb.Font = New Font("HarmonyOS Sans SC", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         viewBtnAdminDb.ForeColor = SystemColors.ButtonHighlight
-        viewBtnAdminDb.Location = New Point(747, 479)
+        viewBtnAdminDb.Location = New Point(1030, 585)
         viewBtnAdminDb.Name = "viewBtnAdminDb"
         viewBtnAdminDb.Size = New Size(137, 37)
         viewBtnAdminDb.TabIndex = 7
@@ -448,7 +586,7 @@ Partial Class AdminDashboard
         searchBtnAdminDB.FlatStyle = FlatStyle.Popup
         searchBtnAdminDB.Font = New Font("HarmonyOS Sans SC", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         searchBtnAdminDB.ForeColor = Color.White
-        searchBtnAdminDB.Location = New Point(790, 25)
+        searchBtnAdminDB.Location = New Point(1073, 27)
         searchBtnAdminDB.Name = "searchBtnAdminDB"
         searchBtnAdminDB.Size = New Size(94, 27)
         searchBtnAdminDB.TabIndex = 3
@@ -458,7 +596,7 @@ Partial Class AdminDashboard
         ' searchAdminDB
         ' 
         searchAdminDB.Font = New Font("HarmonyOS Sans SC", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        searchAdminDB.Location = New Point(463, 25)
+        searchAdminDB.Location = New Point(746, 27)
         searchAdminDB.Name = "searchAdminDB"
         searchAdminDB.PlaceholderText = "Search user...."
         searchAdminDB.Size = New Size(321, 27)
@@ -470,7 +608,7 @@ Partial Class AdminDashboard
         adminDGV.Location = New Point(24, 81)
         adminDGV.Name = "adminDGV"
         adminDGV.RowHeadersWidth = 51
-        adminDGV.Size = New Size(860, 382)
+        adminDGV.Size = New Size(1143, 480)
         adminDGV.TabIndex = 1
         ' 
         ' DTPadminDB
@@ -485,19 +623,23 @@ Partial Class AdminDashboard
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1264, 791)
+        ClientSize = New Size(1533, 887)
         Controls.Add(centerPanelAdminDB)
         Controls.Add(topPanelAdminDB)
         Controls.Add(sidePanelAdminDB)
         Name = "AdminDashboard"
         Text = "AdminDashboard"
         sidePanelAdminDB.ResumeLayout(False)
+        databaseDDPanel.ResumeLayout(False)
         panelDropdown.ResumeLayout(False)
         CType(ic_accountAdminDb, ComponentModel.ISupportInitialize).EndInit()
         CType(ic_logoAdminDB, ComponentModel.ISupportInitialize).EndInit()
         centerPanelAdminDB.ResumeLayout(False)
         centerPanelAdminDB.PerformLayout()
         mainPanelAdminDB.ResumeLayout(False)
+        emailPanelAdmin.ResumeLayout(False)
+        emailPanelAdmin.PerformLayout()
+        CType(ic_email, ComponentModel.ISupportInitialize).EndInit()
         DApanelAdminDB.ResumeLayout(False)
         DApanelAdminDB.PerformLayout()
         CType(ic_DAadminDB, ComponentModel.ISupportInitialize).EndInit()
@@ -549,4 +691,15 @@ Partial Class AdminDashboard
     Friend WithEvents btnDeclineAccounts As Button
     Friend WithEvents btnPendingAccounts As Button
     Friend WithEvents btnCompletedAccounts As Button
+    Friend WithEvents emailPanelAdmin As Panel
+    Friend WithEvents Label1 As Label
+    Friend WithEvents emailLblAdmin As Label
+    Friend WithEvents ic_email As PictureBox
+    Friend WithEvents databaseDDPanel As Panel
+    Friend WithEvents vehiclesBtnAdmin As Button
+    Friend WithEvents clientsBtnAdmin As Button
+    Friend WithEvents databaseBtnAdmin As Button
+    Friend WithEvents accidentBtnAdmin As Button
+    Friend WithEvents violationBtnAdmin As Button
+    Friend WithEvents appointmentBtnAdmin As Button
 End Class
